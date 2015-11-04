@@ -260,20 +260,22 @@
             <fieldset>
                 <p>Отправка данных на телефон</p>
                 <label for="phone">Введите Ваш номер телефона:</label>
-                <input placeholder="+70000000000" 
+                <input 
+                    class="phone"
+                    placeholder="+70000000000" 
                     id="phone" 
                     name="phone" pattern="\+[0-9]{11}" 
                     maxlength="12"required><br>
                 <label for="email">Введите Ваш email:</label>
                 <input 
+                    class="email"
                     placeholder="ivanov.ivan@yandex.ru" 
                     id="email"
                     name="email"
                     type="email" 
-                    pattern="[A-Za-zА-Яа-яЁё]{1}[A-Za-zА-Яа-яЁё\.]{0,}
-                    \@[A-Za-zА-Яа-яЁё]{1}[A-Za-zА-Яа-яЁё\-]{0,}[\.]{1}[A-Za-zА-Яа-яЁё]{2,3}" 
+                    pattern="[A-Za-zА-Яа-яЁё\.]{0,}\@[A-Za-zА-Яа-яЁё\-]{0,}[\.]{1}[A-Za-zА-Яа-яЁё]{2,3}" 
                     required><br>
-                <button type="submit">Получить данные на телефон</button>
+                <button class="buttonB" type="submit">Получить данные на телефон</button>
             </fieldset>
         </form>
     </body>
